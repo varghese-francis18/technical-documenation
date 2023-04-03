@@ -105,8 +105,10 @@
                 code:</p>
             <pre>
                 <code class="space_ele">
-function greetMe(yourName) { 
-alert("Hello " + yourName); }
+function greetMe(yourName)
+{ 
+alert("Hello " + yourName);
+}
 greetMe("World");</code>
         </pre>
 
@@ -184,7 +186,8 @@ console.log(x); // 5</code>
             <code class="space_ele">
 if (true) { let y = 5; } 
 console.log(y); 
-// ReferenceError: y is not defined</code>
+// ReferenceError:
+//y is not defined</code>
         </pre>
         </section>
         <section class="main-section" id="Global_variables">
@@ -225,10 +228,14 @@ const PI = 3.14;</code>
             </p>
             <pre>
 <code class="space_ele">
-// THIS WILL CAUSE AN ERROR 
-function f() {}; const f = 5; 
-// THIS WILL CAUSE AN ERROR ALSO 
-function f() { const g = 5; var g;
+//THIS WILL CAUSE AN ERROR 
+function f() {}; 
+const f = 5; 
+//THIS WILL CAUSE
+//AN ERROR ALSO 
+function f() 
+{ const g = 5; 
+var g;
 //statements }
 </code>
 </pre>
@@ -237,8 +244,9 @@ function f() { const g = 5; var g;
             </p>
             <pre>
             <code class="space_ele">
-const MY_OBJECT = {"key": "value"};
-MY_OBJECT.key ="otherValue";</code>
+const MY_OBJECT = 
+{"key": "value"};
+MY_OBJECT.key="otherValue";</code>
     </pre>
        
             </p>
@@ -277,8 +285,10 @@ MY_OBJECT.key ="otherValue";</code>
             </p>
         <pre>
             <code class="space_ele">
-if (condition) { statement_1; } 
-else { statement_2; }</code>
+if (condition) {
+statement_1; } 
+else { 
+statement_2; }</code>
         </pre>
             <p> condition can be any expression that evaluates to true or false. See Boolean for an explanation of what
                 evaluates to true and false. If condition evaluates to true, statement_1 is executed; otherwise,
@@ -289,9 +299,12 @@ else { statement_2; }</code>
             </p>
         <pre class="space_ele">
             <code>
-if (condition_1) { statement_1; } 
-else if (condition_2) {statement_2; } 
-else if (condition_n) { statement_n; } 
+if (condition_1) 
+{ statement_1; } 
+else if 
+(condition_2) {statement_2; } 
+else if (condition_n) 
+{ statement_n; } 
 else {statement_last; }
 </code>
 </pre>
@@ -300,23 +313,25 @@ else {statement_last; }
                 it's good practice to always use block statements, especially when nesting if statements:</p>
 <pre>        <code class="space_ele">
 if (condition) { 
-statement_1_runs_if_condition_is_true;
-statement_2_runs_if_condition_is_true; } 
+statement_1_runs_if_true;
+statement_2_runs_if_true; } 
 else {
-statement_3_runs_if_condition_is_false;
-statement_4_runs_if_condition_is_false; }            
+statement_3_runs_if_false;
+statement_4_runs_if_false; }            
 </code>
 </pre>
             <p> It is advisable to not use simple assignments in a conditional expression, because the assignment can be
                 confused with equality when glancing over the code. For example, do not use the following code:</p>
             <pre><code class="space_ele"> 
-if (x = y) { /* statements here */ }
+if (x = y) 
+{ /* statements here */ }
 </code>
 </pre>
             <p> If you need to use an assignment in a conditional expression, a common practice is to put additional
                 parentheses around the assignment. For example:</p>
             <pre><code class="space_ele"> 
-if ((x = y)) { /* statements here */ }
+if ((x = y)) 
+{ /* statements here */ }
 </code>
 </pre>
         </section>
@@ -348,7 +363,8 @@ while (condition) statement</code>
             <code class="space_ele">
 var n = 0;
 var x = 0;
-while (n < 3) { n++; x += n; }</code>
+while (n < 3) 
+{ n++; x += n; }</code>
             </pre>
             <p>With each iteration, the loop increments n and adds that value to x. Therefore, x and n take on the
                 following values:
