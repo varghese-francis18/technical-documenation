@@ -1,0 +1,167 @@
+html,
+body,
+ul {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+#navbar {
+    background-color: #95BDFF;
+    grid-column: 1/3;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    padding: 0px;
+    text-align: left;
+    overflow: auto;
+    
+
+}
+#title{
+    background-color: #00425A;
+    color: white;
+    padding-left: 25px;
+    position: sticky;
+    top: 0px;
+    
+}
+
+
+#navbar::-webkit-scrollbar {
+    width: 10px;
+  }
+
+#navbar::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px rgb(0, 0, 0);
+    border-radius: 10px;
+  }
+#navbar::-webkit-scrollbar-thumb{
+    background: rgb(102, 103, 171);
+    border-radius: 10px;
+}
+  
+#logo{
+    width: 100px;
+    
+}
+
+header {
+    font-size: 26px;
+    padding: 20px 0px;
+}
+
+#navbar ul li {
+    list-style: none;
+    padding: 13px 0px;
+    border-bottom: #00425A solid 1px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #00425A;
+    
+}
+
+#navbar ul li:hover{
+   
+    background-color: #5fbcdd;
+}
+
+#main-doc {
+    background-color: #C9EEFF;
+    grid-column: 3 / -1;
+    padding: 50px;
+    line-height: 150%;
+    text-align: justify;
+    
+                             
+}
+
+
+.space_ele{
+    padding-left: 50px;
+}
+#navbar ul{
+    padding: 15px 25px;
+}
+.main-section > header{
+    padding-top: 60px;
+}
+pre {
+    background-color: #c8dce4;
+    padding: 0px 30px;
+  
+}
+code{
+    font-size: 13.5px;
+}
+
+
+
+@media (max-width :1100px) {
+
+    #navbar{
+        grid-column: 1 /4;
+    }
+    #main-doc{
+        
+        grid-column: 4 /-1;
+    }
+    #navbar header{
+            font-size: 20px;
+    }
+    .space_ele{
+        padding-left: 30px;
+    }
+    
+}
+
+@media (max-width :700px) {
+    html,body{
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+    #title{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    #logo{
+        /* flex: 1; */
+        height: 100px;
+    }
+    #navbar header{
+        font-size: 25px;
+}
+    #navbar{
+        grid-column: 1 /-1;
+        position: static;
+        height: 400px;  
+    }
+    #navbar ul{
+            height: 300px;
+            
+    }
+    #logo{
+        display: inline;
+    }
+    
+    #main-doc{
+        grid-column: 1 /-1;
+    }
+    .space_ele{
+        padding-left: 30px;
+    }
+   
+    
+}
